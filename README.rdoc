@@ -3,6 +3,8 @@
 This plugin allow you to configure your signature on "my account". 
 The text typed as signature will be included every time you comment in an issue. 
 
+redmine version = 3.1.2
+
 = Install 
 
 go under your plugin root folder "redmine/plugins"
