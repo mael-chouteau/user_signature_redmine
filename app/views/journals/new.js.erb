@@ -1,0 +1,34 @@
+
+var sign = "<%= j User.current.user_signature %>" ; 
+var cont = "<%= raw escape_javascript(@content) %>"; 
+if (!cont.match(sign)) {
+
+	$('#issue_notes').val("<%= raw escape_javascript(@content) %>"+ "\n" + sign);
+}else{
+
+	$('#issue_notes').val("<%= raw escape_javascript(@content) %>");
+}
+
+function resetCursor(txtElement) { 
+    if (txtElement.setSelectionRange) { 
+        txtElement.focus(); 
+        txtElement.setSelectionRange(0, 0); 
+    } else if (txtElement.createTextRange) { 
+        var range = txtElement.createTextRange();  
+        range.moveStart('character', 0); 
+        range.select(); 
+    } 
+}
+
+resetCursor($('#issue_notes'));
+
+
+<%
+  # when quoting a private journal, check the private checkbox
+  if @journal && @journal.private_notes? 
+%>
+$('#issue_private_notes').prop('checked', true);
+<% end %>
+
+showAndScrollTo("update", "notes");
+$('#notes').scrollTop = $('#notes').scrollHeight - $('#notes').clientHeight;
