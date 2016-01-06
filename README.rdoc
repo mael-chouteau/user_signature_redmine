@@ -15,7 +15,7 @@ now we need to add a ligne on "redmine/app/models/user.rb
 
 search this ligne ( ligne 659 )  safe_attributes 'firstname', and add 'user_signature', to that collection.
 
-finally restaty your server and N-joy. 
+finally restart your server and N-joy. 
 
 
 
