@@ -1,3 +1,22 @@
-= signature
+= Redmine user signature plugin
 
-Description goes here
+This plugin allow you to configure your signature on "my account". 
+The text typed as signature will be included every time you comment in an issue. 
+
+= Install 
+
+go under your plugin root folder "redmine/plugins"
+
+# git clone https://github.com/MYchaieb/user_signature_redmine.git
+
+# rake redmine:plugins:migrate RAILS_ENV=production 
+
+now we need to add a ligne on "redmine/app/models/user.rb 
+
+search this ligne ( ligne 659 )  safe_attributes 'firstname', and add 'user_signature', to that collection.
+
+finally restaty your server and N-joy. 
+
+
+
+
