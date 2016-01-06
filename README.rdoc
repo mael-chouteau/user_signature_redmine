@@ -8,7 +8,9 @@ The text typed as signature will be included every time you comment in an issue.
 go under your plugin root folder "redmine/plugins"
 
 # git clone https://github.com/MYchaieb/user_signature_redmine.git
+
 rename the folder to signature
+
 # mv user_signature_redmine signature
 
 # rake redmine:plugins:migrate RAILS_ENV=production 
