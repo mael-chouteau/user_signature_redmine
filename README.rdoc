@@ -7,21 +7,21 @@ redmine version = 3.1.2
 
 = Install 
 
-go under your plugin root folder "redmine/plugins"
+* go under your plugin root folder "redmine/plugins"
 
 # git clone https://github.com/MYchaieb/user_signature_redmine.git
 
-rename the folder to signature
+* rename the folder to signature
 
 # mv user_signature_redmine signature
 
 # rake redmine:plugins:migrate RAILS_ENV=production 
 
-now we need to add a ligne on "redmine/app/models/user.rb 
+* now we need to add a ligne on "redmine/app/models/user.rb 
 
 search this ligne ( ligne 659 )  safe_attributes 'firstname', and add 'user_signature', to that collection.
 
-finally restart your server and N-joy. 
+* finally restart your server and N-joy. 
 
 
 
