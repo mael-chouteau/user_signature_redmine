@@ -3,7 +3,7 @@
 This plugin allow you to configure your signature on "my account". 
 The text typed as signature will be included every time you comment in an issue. 
 
-redmine version = 3.1.2
+redmine version = 5.1.3
 
 = Install 
 
@@ -19,7 +19,7 @@ redmine version = 3.1.2
 
 * now we need to add a ligne on "redmine/app/models/user.rb 
 
-search this ligne ( ligne 659 )  safe_attributes 'firstname', and add 'user_signature', to that collection.
+search this ligne ( ligne 800 )  safe_attributes 'firstname', and add 'user_signature', to that collection.
 
 * finally restart your server and N-joy. 
 
