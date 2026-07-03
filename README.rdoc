@@ -1,6 +1,7 @@
 = Redmine user signature plugin
 
 The original repo is dead https://github.com/MYchaieb/user_signature_redmine
+
 I'm updating the plugin to work with the new redmine versions.
 
 This plugin allow you to configure your signature on "my account". 
