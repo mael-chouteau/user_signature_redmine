@@ -87,7 +87,8 @@
     <%= hidden_field_tag 'issue_count', @issue_count if @issue_count %>
 
     <%= javascript_tag do %>   
-        $('#issue_notes').val("<%= j User.current.user_signature %>");
-
+        if ($('#issue_notes').val().trim() === '') {
+            $('#issue_notes').val("<%= j User.current.user_signature %>");
+        }
         <% end %>
     <% end %>
