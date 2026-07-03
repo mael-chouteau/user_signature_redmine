@@ -1,9 +1,12 @@
 = Redmine user signature plugin
 
+The original repo is dead https://github.com/MYchaieb/user_signature_redmine
+I'm updating the plugin to work with the new redmine versions.
+
 This plugin allow you to configure your signature on "my account". 
 The text typed as signature will be included every time you comment in an issue. 
 
-redmine version = 5.1.3
+redmine version = 6.1.3
 
 = Install 
 
